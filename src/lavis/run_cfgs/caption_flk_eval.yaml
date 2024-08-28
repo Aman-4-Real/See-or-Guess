@@ -1,0 +1,65 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+
+model:
+  arch: blip2_opt
+  model_type: caption_coco_opt2.7b
+  opt_model: ./ckpt/opt-2.7b
+  use_grad_checkpoint: False
+  load_finetuned: True
+  finetuned: YOUR_INITIAL_MODEL_CKPT
+
+datasets:
+  CFR: # name of the dataset builder
+    type: "flickr30k_entities"
+    vis_processor:
+        eval:
+          name: "blip_image_eval"
+          image_size: 364
+        test:
+          name: "blip_image_eval"
+          image_size: 364
+    text_processor:
+        eval:
+          name: "blip_caption"
+        test:
+          name: "blip_caption"
+
+
+run:
+  task: captioning
+  # optimizer
+  batch_size_train: 64
+  batch_size_eval: 64
+  num_workers: 32
+
+  ############################################
+  ### set this to True for generating captions on the training set
+  generate_on_train: False
+
+  do_TE: False
+  do_NDE: False
+  alpha: 1
+  
+  ############################################
+
+  max_len: 20
+  min_len: 5
+  num_beams: 5
+  if_sample: False
+  gen_num: 1
+
+  seed: 42
+  output_dir: YOUR_OUTPUT_DIR
+  caption_gt_root: YOUR_INITIAL_MODEL_CKPT (there will be files containing gt captions after training the initial model, see src/lavis/datasets/datasets/cfr_caption_datasets.py:line 179)
+
+  evaluate: True
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

@@ -1,0 +1,24 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+datasets:
+  CFR:
+    # data_dir: ${env.data_dir}/datasets
+    data_type: images
+    type: mscoco
+    build_info:
+      annotations:
+        train:
+          url: YOUR_DATASET_DIR/train.pkl
+          storage: YOUR_DATASET_DIR/train.pkl
+        eval:
+          url: YOUR_DATASET_DIR/val.pkl
+          storage: YOUR_DATASET_DIR/val.pkl
+        test:
+          url: YOUR_DATASET_DIR/test.pkl
+          storage: YOUR_DATASET_DIR/test.pkl
+      images:
+          storage: YOUR_DATASET_DIR/
+
