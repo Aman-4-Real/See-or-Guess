@@ -87,13 +87,13 @@ conda activate cfric
 # Usage
 
 ### Quick Check Out
-For the key implementation, refer to [cfr_caption_datasets.py](src/lavis/datasets/datasets/cfr_caption_datasets.py), [modeling_opt.py](src/lavis/transformers_v4p34_local/models/opt/modeling_opt.py) and [CFRLoss.py](src/lavis/transformers_v4p34_local/models/opt/CFRLoss.py)
+For the key implementation, refer to [cfr_caption_datasets.py](src/lavis/datasets/datasets/cfr_caption_datasets.py), [modeling_opt.py](src/lavis/transformers_v4p34_local/models/opt/modeling_opt.py) and [CFRLoss.py](src/lavis/transformers_v4p34_local/models/opt/CFRLoss.py).
 
 
 
 
-### Prepare pretrained checkpoint
-Download pretrained BLIP2 checkpoint (e.g., [blip2-opt-2.7b](https://huggingface.co/Salesforce/blip2-opt-2.7b)) to the `ckpt/` folder.
+### Prepare pre-trained checkpoint
+Download pre-trained BLIP2 checkpoint (e.g., [blip2-opt-2.7b](https://huggingface.co/Salesforce/blip2-opt-2.7b)) to the `ckpt/` folder.
 
 
 
@@ -116,17 +116,16 @@ bash train_caption.sh
 bash eval_caption.sh
 ```
 
-3. Use the total effect loss (TE) or natural direct effect loss (NDE) to regularize the training. 
-Use the config `src/lavis/run_cfgs/caption_coco_ft_te0999.yaml` for TE
+3. Use the total effect loss (TE) or natural direct effect loss (NDE) to regularize the training. Run
 ```
 bash train_caption.sh
 ```
-and `src/lavis/run_cfgs/caption_coco_ft_nde0999.yaml` for NDE. Remember to set both `do_NDE` and `do_TE` to `True` while doing NDE training. Also adjust a proper value of hyperparameter α in the config.
+Use the config `src/lavis/run_cfgs/caption_coco_ft_te0999.yaml` for TE and `src/lavis/run_cfgs/caption_coco_ft_nde0999.yaml` for NDE. Remember to set both `do_NDE` and `do_TE` to `True` while doing NDE training. Also adjust a proper value of hyperparameter α in the config.
 
 
 
 ### Evaluation
-For evaluation, us the config `caption_coco_ft.yaml` (for factual image captioning) and `caption_coco_eval_mask_gen.yaml` (for counterfactual image captioning) for `src/run_scripts/eval_caption.sheval_caption.sh`.
+For evaluation, use the config `caption_coco_ft.yaml` (for factual image captioning) and `caption_coco_eval_mask_gen.yaml` (for counterfactual image captioning) for `src/run_scripts/eval_caption.sheval_caption.sh`.
 
 
 ### Cases Study
