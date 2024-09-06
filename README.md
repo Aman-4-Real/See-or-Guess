@@ -6,7 +6,7 @@
 ![](https://img.shields.io/github/last-commit/Aman-4-Real/See-or-Guess?color=white) 
 
 
-> This repository includes the original implementation of the paper **[See or Guess: Counterfactually Regularized Image Captioning]()** (ACM MM 2024) by Qian Cao et al.
+> This repository includes the original implementation of the paper **[See or Guess: Counterfactually Regularized Image Captioning](https://arxiv.org/pdf/2408.16809)** (ACM MM 2024) by Qian Cao et al.
 
 
 
