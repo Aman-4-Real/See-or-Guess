@@ -47,7 +47,7 @@ If you find our work useful, please cite the paper:
 
 # Before Start
 - Our method can be applied to many small- or large-scale image-to-text models. We provide an implementation of BLIP2 in this repo.
-- The implementation of BLIP2 is based on the original one in [LAVIS](https://github.com/salesforce/LAVIS). You can find more details [LAVIS/BLIP2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2).
+- The implementation of BLIP2 is based on the original one in [LAVIS](https://github.com/salesforce/LAVIS). You can find more details from [LAVIS/BLIP2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2).
 
 
 
