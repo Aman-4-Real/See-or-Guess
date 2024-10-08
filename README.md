@@ -92,7 +92,7 @@ For the key implementation, refer to [cfr_caption_datasets.py](src/lavis/dataset
 
 
 
-### Prepare pre-trained checkpoint
+### Prepare Pre-trained Checkpoint
 Download pre-trained BLIP2 checkpoint (e.g., [blip2-opt-2.7b](https://huggingface.co/Salesforce/blip2-opt-2.7b)) to the `ckpt/` folder.
 
 
