@@ -63,7 +63,7 @@ conda activate cfric
 
 
 # Prepare the Data
-- Please organize your data as the following format:
+- Please organize your data in the following format (or you can use the data provided in the [data/](data/) folder):
 ```
 {
     'img_path': 'val2014/COCO_val2014_000000522418.jpg', # relative image path in the dataset dir
@@ -81,7 +81,6 @@ conda activate cfric
 ```
 - Save the data into `.pkl` file and put it in the `YOUR_DATASET_DIR`.
 - Change the `url` and `storage` fields in the file `src/lavis/configs/datasets/mscoco/defaults.yaml` to `YOUR_DATASET_DIR/{train,valid,test}.pkl`, correspondingly.
-
 
 
 # Usage
