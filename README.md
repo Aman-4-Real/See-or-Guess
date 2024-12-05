@@ -9,7 +9,7 @@
 
 > This repository includes the original implementation of the paper **[See or Guess: Counterfactually Regularized Image Captioning](https://arxiv.org/pdf/2408.16809)** (ACM MM 2024) by Qian Cao et al.
 
-> Paper versions: **[[ArXiv]](https://arxiv.org/pdf/2408.16809)**  **[[ACM]](https://dl.acm.org/doi/10.1145/3664647.3681458)**
+> Paper versions: **[[ArXiv]](https://arxiv.org/pdf/2408.16809)** | **[[ACM]](https://dl.acm.org/doi/10.1145/3664647.3681458)**
 
 
 # Abstract
