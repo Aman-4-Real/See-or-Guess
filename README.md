@@ -6,9 +6,10 @@
 ![](https://img.shields.io/github/last-commit/Aman-4-Real/See-or-Guess?color=white) 
 
 
+
 > This repository includes the original implementation of the paper **[See or Guess: Counterfactually Regularized Image Captioning](https://arxiv.org/pdf/2408.16809)** (ACM MM 2024) by Qian Cao et al.
 
-
+> Paper versions: **[[ArXiv]](https://arxiv.org/pdf/2408.16809)**  **[[ACM]](https://dl.acm.org/doi/10.1145/3664647.3681458)**
 
 
 # Abstract
@@ -27,9 +28,11 @@ Extensive experiments on various datasets show that our method effectively reduc
 If you find our work useful, please cite the paper:
 ```
 @inproceedings{cao2024see,
-    title={See or Guess: Counterfactually Regularized Image Captioning},
-    author={Cao, Qian and Chen, Xu and Song, Ruihua and Wang, Xiting and Huang, Xinting and Ren, Yuchen},
-    booktitle={ACM Multimedia 2024}
+  title={See or Guess: Counterfactually Regularized Image Captioning},
+  author={Cao, Qian and Chen, Xu and Song, Ruihua and Wang, Xiting and Huang, Xinting and Ren, Yuchen},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={965--974},
+  year={2024}
 }
 ```
 
@@ -136,4 +139,14 @@ For evaluation, use the config `caption_coco_ft.yaml` (for factual image caption
 
 # Contact
 For any questions, please feel free to reach me at caoqian4real[at]ruc.edu.cn.
+
+```
+@inproceedings{cao2024see,
+  title={See or Guess: Counterfactually Regularized Image Captioning},
+  author={Cao, Qian and Chen, Xu and Song, Ruihua and Wang, Xiting and Huang, Xinting and Ren, Yuchen},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={965--974},
+  year={2024}
+}
+```
 
